@@ -4,7 +4,7 @@
 # serials-found.csv will have the serials listed in column A and the device where found in column B
 # in addition to the output file, the findings will be printed interactively to the screen
 #
-# execute the program by issueing the command 'pyhton3 dnac-find-serials.py' without quotes from the linux command line
+# BASE_URL will need to be update with the IP address of your DNAC, or in the case of a cluster, the DNAC VIP
 
 #deleloped with Python 3.6 
 
@@ -20,7 +20,7 @@ import urllib3
 urllib3.disable_warnings()
 
 # Variables
-BASE_URL = 'https://10.216.3.110'
+BASE_URL = 'https://xxx.xxx.xxx.xxx'
 AUTH_URL = '/dna/system/api/v1/auth/token'
 INVENTORY_URL = '/dna/intent/api/v1/network-device'
 inFile = 'serials.csv'
